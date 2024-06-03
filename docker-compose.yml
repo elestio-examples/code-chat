@@ -75,8 +75,8 @@ services:
       - ./redis_data:/data
     ports:
       - "6379:6379"
-    networks:
-      - public_network
+    # networks:
+    #   - public_network
 
   pgadmin:
     image: elestio/pgadmin:latest
