@@ -2,7 +2,6 @@
 set -o allexport; source .env; set +o allexport;
 
 
-chmod +x ./localstack_bootstrap.sh
 
 SESSION_SECRET=$(openssl rand -hex 32)
 AUTHENTICATION_GLOBAL_AUTH_TOKEN=$(openssl rand -hex 32)
